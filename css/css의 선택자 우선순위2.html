@@ -5,22 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>css의 선택자 우선순위</title>
   <style>
-    /* .section{
-      border: 1px solid #864;
-      background-color: #cb9e21;
-      padding: 20px 20px;
+    p{
+      background-color: #CCC !important;
+      border: 1px solid #000;
     }
-    .wrap > .inner{
-      background-color: #ccc;
-    }
+    .section p{ background-color: #0f0;}
+    #section p{ background-color: #486;}
 
-    .wrap .inner{
-      background-color: #660;
+    p{
+      background-color: #f00;
     }
 
-    .section p{ background-color: #ccc;} */
-
-    #section1 p{ background-color: #f00;}
+    /* .section p{
+      color: #00f;
+      background-color: #864;
+      padding: 20px;
+    } */
 
   </style>
 
@@ -32,7 +32,7 @@
   <div class="wrap">
     <div class="section" id="section1">
       <div class="inner">
-        <p>section1-item</p>
+        <p style="background-color: #ff0;">section1-item</p>
       </div>
     </div>
     <div class="section" id="section2">
