@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+ul,ol,li{list-style: none;}
+/* 테스트용 */
+body>div {margin: 50px;}
+
+/* product_listmain */
+
+/*   <div data-ez-holder="product_listmain">
+    <div class="ec-base-product">
+      <ul class="prdList grid4">
+        <li id="anchorBoxId_13">
+          <div class="prdList__item">
+            <div class="thumnail"> */
+
+  .ec-base-product{}
+  .ec-base-product .prdList{
+    font-size: 0;
+    line-height: 0;
+  }
+
+  .ec-base-product .prdList li{
+    border: 1px solid #000;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 1;
+  }
+
+  /* 메인분류 상품목록 단 처리 */
+
+  .ec-base-product .prdList.grid2 li{width: 50%;}
+  .ec-base-product .prdList.grid3 li{width: 33.33%;}
+  .ec-base-product .prdList.grid4 li{width: 25%;}
+  .ec-base-product .prdList.grid5 li{width: 200%;}
+
+  .ec-base-product .prdList .prdList__item{
+    margin: 0 10px;
+  }
+
+  .ec-base-product .prdList .thumbnail{
+    border: 1px solid #f00;
+    position: relative;
+  }
+
+  .ec-base-product .prdList .thumbnail>a{}
+  .ec-base-product .prdList .thumbnail>a>img{
+    width: 100;
+  }
+
+  .ec-base-product .prdList .thumbnail .prdIcon {
+    border: 1px solid #00f;/
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+
+  }
+
+  .product-bgLT {
+    background-position: left top;
+  }
