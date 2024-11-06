@@ -21,14 +21,20 @@
     .item1{background-color: #6cc;}
     .item2{background-color: #c6c;}
     /* z-index */
-    .box1{position: absolute; top:0; z-index: 10;}
+    .box1{position: absolute; top:0; z-index: 100;}
+
+
     .box2{position: relative; height: 600px; top:100px; 
       z-index: 50;
     }
     .box2 .item1{
       z-index: 1000;
     }
-    .box3{position: relative; top: -100px; z-index: 50;}
+
+
+    .box3{position: relative; 
+      top: -100px; 
+      z-index: 50;}
   </style>
 </head>
 <body>
