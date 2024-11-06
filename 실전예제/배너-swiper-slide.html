@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배너-swiper-slide </title>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+  <style>
+    /* reset */
+    *{margin: 0; padding: 0;}
+    .maybanner{margin:50px;}
+    ul,ol,li{list-style: none;}
+    a{text-decoration: none;}
+
+    /*여기서 부터 단 배너 css */
+    .myslider{
+      --banner-gap:20px;/*pc 갭*/
+      --banner-m-h-gap:10px;/*모바일 수평 갭*/
+      --banner-m-v-gap:10px;/*모바일 수직 갭*/
+      --banner-top-margin:50px;
+      --banner-bottom-margin:50px;
+      --banner-top-padding:50px;
+      --banner-bottom-padding:50px;
+      --banner-max-width:1440px;
+      --col1:100%;
+      --col2:50%;
+      --col3:33.333%;
+      --col4:25%;
+      --col5:20%;
+    }
+
+    .myslider{
+      margin-top: var(--banner-top-margin);
+      margin-bottom: var(--banner-bottom-margin);
+      /* background-color: #dd6; */
+    }
+    .myslider__inner{
+      max-width: var(--banner-max-width);
+      margin: 0 auto;
+      padding-top:var(--banner-top-padding);
+      padding-bottom:var(--banner-bottom-padding);
+    }
+    .myslider__list{
+      display: flex;
+      /* gap: var(--banner-gap); */
+      box-sizing: border-box;
+    }
+    .myslider__item{
+      box-sizing: border-box;
+    }
+
+    .myslider__link{display: block;}
+    .myslider .thumb-box picture,
+    .myslider .thumb-box picture source,
+    .myslider .thumb-box picture img{ 
+      display: block;
+       width: 100%;
+      }
+    .myslider .text-box .text-title{}
+    .myslider .text-box .text-desc{}
+ 
+    @media (max-width:767px){
+      .myslider__list{
+
+      }
+      .myslider__item{
+      }
+
+
+  
+    }
+    /*.myslider 단배너 스타일끝 */
+  </style>
+</head>
+<body>
+  <!-- myslider 시작 -->
+  <div class="myslider">
+    <div class="myslider__inner">
+      <ul class="myslider__list">
+
+        <li class="myslider__item">
+          <a href="" class="myslider__link">
+            <div class="thumb-box">
+              <picture>
+                <source 
+                   srcset="/mytest/img/img_768x768.jpg" 
+                   media="(max-width: 720px)">
+               <img src="/mytest/img/img_1920x810.jpg" 
+                   alt="">
+              </picture>
+            </div>
+            <div class="text-box">
+              <p class="text-title">배너제목1</p>
+              <p class="text-desc">배너 설명  배너 설명</p>
+            </div>
+          </a>
+        </li>
+        <!-- 2번째 li -->
+        <li class="myslider__item">
+          <a href="" class="myslider__link">
+            <div class="thumb-box">
+              <picture>
+                <source 
+                   srcset="/mytest/img/img_768x768.jpg" 
+                   media="(max-width: 720px)">
+               <img src="/mytest/img/img_1920x810.jpg" 
+                   alt="">
+              </picture>
+            </div>
+            <div class="text-box">
+              <p class="text-title">배너제목2</p>
+              <p class="text-desc">배너 설명  배너 설명</p>
+            </div>
+          </a>
+        </li>
+        <!-- 3번째  -->
+        <li class="myslider__item">
+          <a href="" class="myslider__link">
+            <div class="thumb-box">
+              <picture>
+                <source 
+                   srcset="/mytest/img/img_768x768.jpg" 
+                   media="(max-width: 720px)">
+               <img src="/mytest/img/img_1920x810.jpg" 
+                   alt="">
+              </picture>
+            </div>
+            <div class="text-box">
+              <p class="text-title">배너제목3</p>
+              <p class="text-desc">배너 설명  배너 설명</p>
+            </div>
+          </a>
+        </li>
+
+        <!-- 4번째  -->
+        <li class="myslider__item">
+          <a href="" class="myslider__link">
+            <div class="thumb-box">
+              <picture>
+                <source 
+                   srcset="/mytest/img/img_768x768.jpg" 
+                   media="(max-width: 720px)">
+               <img src="/mytest/img/img_1920x810.jpg" 
+                   alt="">
+              </picture>
+            </div>
+            <div class="text-box">
+              <p class="text-title">배너제목4</p>
+              <p class="text-desc">배너 설명  배너 설명</p>
+            </div>
+          </a>
+        </li>
+
+        
+
+      </ul>
+    </div>
+  </div>
+  <!-- //myslider -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+</html>
